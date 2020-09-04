@@ -1,4 +1,4 @@
-/* This is a definitions file for Plotting Points Program */
+/* This is a definitions file for Points2Graph */
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -212,7 +212,7 @@ void graph::drawBot(){
 	}
 }	
 
-// Function to write the graph
+// Function to make and print the graph
 void graph::writeGraph(){	
 	setParamaters();
 	drawGraph();
