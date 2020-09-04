@@ -4,9 +4,9 @@
 #include "graph.cpp"
 using namespace std;
 
-int main()
+int main(int argc, char *argv[])
 {
-	graph test;
+	graph test(argv[1]); 
 	int *ptrx, *ptry;
 
 	test.readxy();
