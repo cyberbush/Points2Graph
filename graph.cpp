@@ -2,13 +2,15 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <string.h>
 #include <cstdlib>
 #include "graph.h"
 using namespace std;
 
 //Constructor for class graph
-graph::graph(){
+graph::graph(char *arr){
 	size = maxX = minX = maxY = minY = indexX = indexY = 0;
+	filename = strdup(arr); 
 }
 
 //Destructor for class graph
@@ -40,7 +42,7 @@ vector<int> graph::readFile(){
 	int num, i=0;
 	vector<int> inVect;
 	
-	inputFile.open("points.txt");
+	inputFile.open(filename);
 	
 	// format 0 0 1 1 where (0, 0), (1, 1)
 	while(inputFile >> num)
