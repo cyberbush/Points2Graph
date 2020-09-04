@@ -1,4 +1,4 @@
-/* This is a header file for Plotting Points Program */
+/* This is a header file for Points2Graph */
 using namespace std;
 class graph{
 	public:
