@@ -171,6 +171,7 @@ void graph::drawXline(){
 	int min = abs(minX);
 	int minNum = min;
 	int maxNum = 1;
+	int xneg = 0;
 	if(minX < 0){
 		for(int i=0; i<min; i++)
 			cout << -1(minNum-i) << "\t";
@@ -180,8 +181,10 @@ void graph::drawXline(){
 	else
 		cout << "0\t";
 	if(maxX > 0){
-		for(int j=0; j<maxX; j++)
-			cout << maxNum+j << "\t";
+		for(int j=0; j<maxX; j++){
+			xneg = -1(maxNum+j)
+			cout << xneg << "\t";
+		}
 	}
 	cout << "\n\n\n";
 }
@@ -192,6 +195,7 @@ void graph::drawBot(){
 	int maxnum = 1;
 	int min = abs(minX);
 	int max = abs(maxX);
+	int yneg = 0;
 	if(minY < 0){
 		for(int i = 0; i < maxBot; i++){
 			if(minX < 0){
@@ -201,7 +205,8 @@ void graph::drawBot(){
 					else
 						cout << "\t";
 			}
-			cout << -1(maxnum+i);
+			yneg = -1(maxnum+i);
+			cout << yneg;
 			if(maxX > 0){ 
 				for(int k = 0; k < max; k++)
 					if(checkCoord(1+k, 1+i))
