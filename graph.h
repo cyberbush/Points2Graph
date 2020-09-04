@@ -2,7 +2,7 @@
 using namespace std;
 class graph{
 	public:
-		graph();
+		graph(char *arr);
 		~graph();
 		void printxy(int *);
 		vector<int> readFile();
@@ -21,4 +21,5 @@ class graph{
 	private:;
 		int *ptrx, *ptry;
 		int size, maxX, minX, maxY, minY, indexX, indexY;
+		char *filename;
 };
