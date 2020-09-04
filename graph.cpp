@@ -149,19 +149,19 @@ void graph::drawTop(){
 			if(minX < 0){
 				for(int j = 0; j < min; j++)
 					if(checkCoord(minX+j,maxY-i))
-						cout << "* ";
+						cout << "*\t";
 					else
-						cout << "  ";
+						cout << "\t";
 			}
 			cout << maxTop-i;
 			if(maxX > 0){ 
 				for(int k = 0; k < max; k++)
 					if(checkCoord(k+1,maxY-i))
-						cout << " *";
+						cout << "\t*";
 					else
-						cout << "  ";
+						cout << "\t";
 			}
-			cout << "\n";
+			cout << "\n\n\n";
 		}
 	}
 }
@@ -173,17 +173,17 @@ void graph::drawXline(){
 	int maxNum = 1;
 	if(minX < 0){
 		for(int i=0; i<min; i++)
-			cout << minNum-i << " ";
+			cout << minNum-i << "\t";
 	}
 	if(checkCoord(0,0))
-		cout << "* ";
+		cout << "*\t";
 	else
-		cout << "0 ";
+		cout << "0\t";
 	if(maxX > 0){
 		for(int j=0; j<maxX; j++)
-			cout << maxNum+j << " ";
+			cout << maxNum+j << "\t";
 	}
-	cout << "\n";
+	cout << "\n\n\n";
 }
 
 // Draws below the x-axis
@@ -197,19 +197,19 @@ void graph::drawBot(){
 			if(minX < 0){
 				for(int j = 0; j < min; j++)
 					if(checkCoord(minX+j, 1+i))
-						cout << "* ";
+						cout << "*\t";
 					else
-						cout << "  ";
+						cout << "\t";
 			}
 			cout << maxnum+i;
 			if(maxX > 0){ 
 				for(int k = 0; k < max; k++)
 					if(checkCoord(1+k, 1+i))
-						cout << " *";
+						cout << "\t*";
 					else
-						cout << "  ";
+						cout << "\t";
 			}
-			cout << "\n";
+			cout << "\n\n\n";
 		}
 	}
 }	
