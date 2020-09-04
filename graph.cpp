@@ -173,7 +173,7 @@ void graph::drawXline(){
 	int maxNum = 1;
 	if(minX < 0){
 		for(int i=0; i<min; i++)
-			cout << minNum-i << "\t";
+			cout << -1(minNum-i) << "\t";
 	}
 	if(checkCoord(0,0))
 		cout << "*\t";
@@ -201,7 +201,7 @@ void graph::drawBot(){
 					else
 						cout << "\t";
 			}
-			cout << maxnum+i;
+			cout << -1(maxnum+i);
 			if(maxX > 0){ 
 				for(int k = 0; k < max; k++)
 					if(checkCoord(1+k, 1+i))
