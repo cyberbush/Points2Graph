@@ -1,4 +1,4 @@
-/* This is the main file for Plotting Points Progam 
+/* This is the main file for Points2Graph 
 *	, 9/1/2020 */
 #include <iostream>
 #include "graph.cpp"
